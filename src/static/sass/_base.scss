@@ -3,11 +3,14 @@ body * {
 }
 
 a {
+    cursor: pointer;
 }
 
 p, h1, h2 {
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Share Tech Mono', monospace;
     text-transform: uppercase;
+    color: $dark-gray;
+    font-weight: bold;
 }
 
 h1 {
@@ -21,17 +24,15 @@ h1 {
 }
 
 .container {
-    // margin: 0 auto;
-    // max-width: 1160px;
-    // width: 100%;
-    // box-sizing: border-box;
+    margin: 0 auto;
+    max-width: 985px;
+    width: 100%;
+    box-sizing: border-box;
+    height: 100%;
 }
 
-.active {
-}
 
-
-@media (max-width: $desktop) {
+@media (max-width: $laptopLg) {
     .container {
         padding-right: 15px;
         padding-left: 15px;
