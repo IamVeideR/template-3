@@ -1,16 +1,17 @@
-body {
-}
-
 body * {
+    font-family: 'Roboto', sans-serif;
 }
 
 a {
 }
 
-p {
+p, h1, h2 {
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
 }
 
 h1 {
+    font-size: 36px;
 }
 
 .base-button {
