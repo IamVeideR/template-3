@@ -1,0 +1,12 @@
+.section-title {
+    text-align: center;
+    width: 90%;
+    max-width: 560px;
+    margin: 70px auto 55px;
+
+    &__line {
+        width: 150px;
+        height: 2px;
+        margin: 0 auto 25px;
+    }
+}
