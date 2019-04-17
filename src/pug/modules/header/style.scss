@@ -1,0 +1,38 @@
+.header {
+    height: 140px;
+    background-color: $light-gray;
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo {
+        font-size: 38px;
+        display: flex;
+        margin-top: 10px;
+        padding: 5px 0px;
+        
+
+        &__image {
+            padding-bottom: 10px;
+            padding-right: 10px;
+            color: $coral; 
+            transform: rotate(-45deg);
+        }
+        &__title {
+            color: $dark-gray;
+        }
+    }
+
+    &__dropdown {
+        cursor: pointer;
+        padding: 5px;
+        color: $coral;
+        font-size: 36px;
+    }
+    &__dropdown:hover {
+        color: $dark-coral;
+    }
+}

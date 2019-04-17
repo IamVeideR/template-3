@@ -1,0 +1,148 @@
+extends ../layout/base
+
+block variables
+    - pageTitle = 'Boostfolia'
+    
+block content
+    .about
+        - 
+            var title = {
+                title: 'About Us',
+                text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.'
+            }
+        include ../modules/section-title/module
+        .qualities.container
+            - 
+                var quality = {
+                    title: 'Creative Design',
+                    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.',
+                    image: 'fas fa-paint-roller'
+                }
+            include ../modules/quality/module
+            - 
+                var quality = {
+                    title: 'Unique Portfolio',
+                    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.',
+                    image: 'fas fa-suitcase'
+                }
+            include ../modules/quality/module
+            - 
+                var quality = {
+                    title: 'Infinite Updates',
+                    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.',
+                    image: 'fas fa-infinity'
+                }
+            include ../modules/quality/module
+    .video-section
+        .video-section__text-container
+            .text-container__title Watch Behind The Scene
+            .text-container__text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure.
+            a.text-container__button.base-button Play Now
+        .video-section__video-container
+            .video-container__video
+    .works
+        - 
+            var title = {
+                title: 'Our Works',
+                text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.'
+            }
+        include ../modules/section-title/module
+        .works__menu
+            ul.menu__list
+                li.menu__item.all-projects.active All Projects
+                li.menu__item.photography Photography
+                li.menu__item.web-design Web Design
+                li.menu__item.branding Branding
+                li.menu__item.mobile-app Mobile App
+        ul.works__list
+            li.works__item #[img.works__image(src='#')]
+            li.works__item #[img.works__image(src='#')]
+            li.works__item #[img.works__image(src='#')]
+            li.works__item #[img.works__image(src='#')]
+            li.works__item #[img.works__image(src='#')]
+            li.works__item #[img.works__image(src='#')]
+            li.works__item #[img.works__image(src='#')]
+            li.works__item #[img.works__image(src='#')]
+            li.works__item #[img.works__image(src='#')]
+            li.works__item #[img.works__image(src='#')]
+            li.works__item #[img.works__image(src='#')]
+            li.works__item #[img.works__image(src='#')]
+            li.works__item #[img.works__image(src='#')]
+            li.works__item #[img.works__image(src='#')]
+            li.works__item #[img.works__image(src='#')]
+    .team 
+        - 
+            var title = {
+                title: 'Who We Are',
+                text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.'
+            }
+        include ../modules/section-title/module
+        .team__container.container 
+            - 
+                var member = [
+                    {
+                        image: '1',
+                        name: 'Jane Smith',
+                        profession: 'Designer',
+                        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.nsectetur adipiscing elit, sed do eiusmod tempor.',
+                        skill: [
+                            {
+                                name: 'Photoshop',
+                                percentage: '88%',
+                            },
+                            {
+                                name: 'Illustrator',
+                                percentage: '92%',
+                            },
+                            {
+                                name: 'Sketch',
+                                percentage: '90%',
+                            },
+                            {
+                                name: 'After Effects',
+                                percentage: '98%',
+                            }
+                        ]
+                    //- },
+                    //- {
+                    //- image: '2',
+                    //- name: 'Jine Smith',
+                    //- profession: 'Designer',
+                    //- text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.nsectetur adipiscing elit, sed do eiusmod tempor.',
+                    //- skill: [
+                    //-         {
+                    //-             name: 'Photoshop',
+                    //-             percentage: '88%',
+                    //-         },
+                    //-         {
+                    //-             name: 'Illustrator',
+                    //-             percentage: '92%',
+                    //-         },
+                    //-         {
+                    //-             name: 'Sketch',
+                    //-             percentage: '90%',
+                    //-         },
+                    //-         {
+                    //-             name: 'After Effects',
+                    //-             percentage: '92%',
+                    //-         }
+                    //-     ]
+                    }
+                ]
+            include ../modules/member/module 
+    .blogs
+        - 
+            var title = {
+                title: 'Blog Posts',
+                text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.'
+            }
+        include ../modules/section-title/module
+    .contact
+        - 
+            var title = {
+                title: 'Get In Touch',
+                text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.'
+            }
+        include ../modules/section-title/module
+
+

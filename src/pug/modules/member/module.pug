@@ -1,0 +1,25 @@
+mixin skills(name, percentage)
+    li.member-skills__item
+        p.member-skills__name= name 
+        .member-skills__line
+            .member-skills__diagram(style="width: "+percentage)
+        .member-skills__percentage= percentage
+
+each val in member
+    .member
+        .member__image(style="background-image: url(static/img/"+val.image+");")
+        p.member__name= val.name
+        p.member__profession= val.profession
+        .member__social
+            ul.social__list
+                li #[a(href= val.behance) #[i.social__item.fab.fa-behance-square]]
+                li #[a(href= val.twitter) #[i.social__item.fab.fa-twitter-square]]
+                li #[a(href= val.facebook) #[i.social__item.fab.fa-facebook-square]]
+each val in member
+    .member-skills
+        p.member-skills__title My Skills
+        .member-skills__text= val.text
+        ul.member-skills__list
+            each skill in val.skill
+                +skills(skill.name, skill.percentage)
+    

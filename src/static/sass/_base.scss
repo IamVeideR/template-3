@@ -1,36 +1,61 @@
-body {
-}
-
 body * {
+    font-family: 'Roboto', sans-serif;
+    transition-duration: 0.25s;
 }
 
 a {
+    cursor: pointer;
+}
+h1, h2 {
+    font-family: 'Share Tech Mono', monospace;
+    text-transform: uppercase;
+    color: $dark-gray;
+    font-weight: bold;
 }
 
 p {
+    text-transform: uppercase;
+    font-weight: bold;
+
 }
 
 h1 {
+    font-size: 44px;
 }
 
+div {
+    font-size: 14px;
+    color: $text-gray;
+}
+
+hr {
+    background-color: $coral;
+    border: none;
+}
 .base-button {
+    background-color: $coral;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 9px 25px;
+    border-radius: 2px;
 }
 
 .base-button:hover {
+    background-color: $dark-coral;
+    color: $light-gray; 
 }
 
 .container {
-    // margin: 0 auto;
-    // max-width: 1160px;
-    // width: 100%;
-    // box-sizing: border-box;
+    margin: 0 auto;
+    max-width: 985px;
+    width: 100%;
+    box-sizing: border-box;
+    height: 100%;
 }
 
-.active {
-}
 
-
-@media (max-width: $desktop) {
+@media (max-width: $laptopLg) {
     .container {
         padding-right: 15px;
         padding-left: 15px;
